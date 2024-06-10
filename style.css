@@ -1,0 +1,87 @@
+/* Reset de margin e padding para todos os elementos, usando uma fonte sem serifa e definindo o box-sizing como border-box */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    /* Cor de fundo */
+    background-color: #101010;
+    /* Utilização de Flexbox para centralizar conteúdo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Largura e altura total da tela */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Estilos para o contêiner do relógio */
+#relogio {
+    /* Cor de fundo do relógio */
+    background-color: #0e060e;
+    /* Cor do texto */
+    color: #fff;
+    /* Espaçamento interno */
+    padding: 10px 15px;
+    /* Borda arredondada */
+    border-radius: 5px;
+    /* Borda com cor */
+    border: 3px solid #ba1d0a;
+    /* Largura total e máxima do relógio */
+    width: 100%;
+    max-width: 340px;
+    /* Utilização de Flexbox para alinhar conteúdo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Alinhamento vertical dos itens */
+    flex-direction: column;
+    /* Efeito de reflexo abaixo do relógio */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,255,255,0.1));
+}
+
+/* Estilos para o relógio quando o mouse passa sobre ele */
+#relogio:hover {
+    /* Cor de fundo ao passar o mouse */
+    background-color: #ba1d0a;
+    /* Sombra ao redor do relógio */
+    box-shadow: 0 0 30px #ba1d0a;
+    /* Cor do texto ao passar o mouse */
+    color: #0e060e;
+    /* Transição suave para mudanças */
+    transition: 1s ease;
+    /* Propriedades que sofrerão a transição */
+    transition-property: color, background, box-shadow;
+    
+}
+
+/* Estilos para a div de data */
+#data {
+    /* Tamanho da fonte */
+    font-size: 20px;
+    /* Espessura da fonte */
+    font-weight: 600;
+}
+
+/* Estilos para a div de tempo */
+#tempo {
+    /* Tamanho da fonte */
+    font-size: 60px;
+}
+
+/* Estilo para elementos com a classe 'blink' */
+.blink {
+    /* Torna o texto transparente */
+    color: transparent;
+}
+
+.box3d {
+    /* Transformações para perspectiva 3D */
+    transform: rotateX(10deg) rotateY(10deg);
+    /* Animação suave para a transformação */
+    transition: transform 0.3s ease;
+}

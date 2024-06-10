@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+
+<!-- O evento onload chama a função initTime() quando a página termina de carregar -->
+<body onload="initTime()">
+    <!-- Div principal que contém o relógio -->
+    <div id="relogio" >
+        <!-- Div que exibe a data -->
+        <div id="data" >
+            <!-- Span para exibir o dia -->
+            <span id="dia">10</span> de
+            <!-- Span para exibir o mês -->
+            <span id="mes">junho</span> de
+            <!-- Span para exibir o ano -->
+            <span id="ano">2024</span>
+        </div>
+        <!-- Div que exibe o tempo -->
+        <div id="tempo">
+            <!-- Span para exibir as horas -->
+            <span id="horas" >12</span> 
+            <!-- Span que exibe a separação dos tempos (:) -->
+            <span class="separacao">:</span>
+            <!-- Span para exibir os minutos -->
+            <span id="minutos">00</span> 
+            <!-- Span que exibe a separação dos tempos (:) -->
+            <span class="separacao">:</span>
+            <!-- Span para exibir os segundos -->
+            <span id="segundos">00</span>
+        </div>
+    </div>
+</body>
+<!-- Inclui o arquivo JavaScript que contém a função initTime() e outras lógicas para o relógio -->
+<script src="./scripts.js"></script>
+
+
+</html>
